@@ -1,0 +1,659 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>utils.general package &mdash; documentación de Documentación de utils - 0.1.0</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=ba61de6b"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="prev" title="utils package" href="utils.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Documentación de utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">utils</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="utils.html">utils package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="utils.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">utils.general package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="utils.html#module-utils">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Documentación de utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">utils</a></li>
+          <li class="breadcrumb-item"><a href="utils.html">utils package</a></li>
+      <li class="breadcrumb-item active">utils.general package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/utils.general.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="utils-general-package">
+<h1>utils.general package<a class="headerlink" href="#utils-general-package" title="Link to this heading"></a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="module-utils.general.archivo">
+<span id="utils-general-archivo-module"></span><h2>utils.general.archivo module<a class="headerlink" href="#module-utils.general.archivo" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="utils.general.archivo.Archivo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">utils.general.archivo.</span></span><span class="sig-name descname"><span class="pre">Archivo</span></span><a class="reference internal" href="_modules/utils/general/archivo.html#Archivo"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.archivo.Archivo" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Una clase que contiene métodos para crear y actualizar archivo csv y txt, crear
+archivos docx, y borrar archivos en general</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.archivo.Archivo.actualizar_csv">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">actualizar_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ruta_csv</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filas</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columnas</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/archivo.html#Archivo.actualizar_csv"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.archivo.Archivo.actualizar_csv" title="Link to this definition"></a></dt>
+<dd><p>Actualiza el archivo csv en la ruta indicada</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ruta_csv</strong> (<em>str</em>) – Ruta a actualizar, debe ser absoluta</p></li>
+<li><p><strong>filas</strong> (<em>list</em><em>[</em><em>list</em><em>[</em><em>Any</em><em>]</em><em>]</em>) – Los datos a agregar en el csv</p></li>
+<li><p><strong>columnas</strong> (<em>list</em><em>[</em><em>Any</em><em>]</em>) – Nombres de las columnas del csv</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Ruta del csv y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[str, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.archivo.Archivo.actualizar_txt">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">actualizar_txt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ruta_txt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">texto</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/archivo.html#Archivo.actualizar_txt"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.archivo.Archivo.actualizar_txt" title="Link to this definition"></a></dt>
+<dd><p>Actualiza el archivo de texto en la ruta indicada</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ruta_txt</strong> (<em>str</em>) – Ruta a actualizar, debe ser absoluta</p></li>
+<li><p><strong>texto</strong> (<em>str</em>) – Los datos a agregar en el archivo de texto</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Ruta del archivo de texto y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[str, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.archivo.Archivo.borrar_archivo">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">borrar_archivo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ruta_archivo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/archivo.html#Archivo.borrar_archivo"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.archivo.Archivo.borrar_archivo" title="Link to this definition"></a></dt>
+<dd><p>Elimina el archivo</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ruta_archivo</strong> (<em>str</em>) – Ruta a borrar, debe ser absoluta</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Ruta del archivo borrado y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[str, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.archivo.Archivo.crear_csv">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">crear_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ruta_csv</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filas</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columnas</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/archivo.html#Archivo.crear_csv"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.archivo.Archivo.crear_csv" title="Link to this definition"></a></dt>
+<dd><p>Crea el archivo csv en la ruta indicada</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ruta_csv</strong> (<em>str</em>) – Ruta a crear, debe ser absoluta</p></li>
+<li><p><strong>filas</strong> (<em>list</em><em>[</em><em>list</em><em>[</em><em>Any</em><em>]</em><em>]</em>) – Los datos a agregar en el csv</p></li>
+<li><p><strong>columnas</strong> (<em>list</em><em>[</em><em>Any</em><em>]</em>) – Nombres de las columnas del csv</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Ruta del csv y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[str, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.archivo.Archivo.crear_docx">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">crear_docx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ruta_docx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ruta_plantilla</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datos</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/archivo.html#Archivo.crear_docx"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.archivo.Archivo.crear_docx" title="Link to this definition"></a></dt>
+<dd><p>Crea el archivo docx en la ruta indicada</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ruta_docx</strong> (<em>str</em>) – Ruta a crear, debe ser absoluta</p></li>
+<li><p><strong>ruta_plantilla</strong> (<em>str</em>) – Ruta de la plantilla base, debe ser absoluta</p></li>
+<li><p><strong>datos</strong> (<em>list</em><em>[</em><em>str</em><em>]</em>) – Valores a agregar en el archivo docx</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Ruta del docx y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[str, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.archivo.Archivo.crear_txt">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">crear_txt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ruta_txt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">texto</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/archivo.html#Archivo.crear_txt"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.archivo.Archivo.crear_txt" title="Link to this definition"></a></dt>
+<dd><p>Crea el archivo de texto en la ruta indicada</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ruta_txt</strong> (<em>str</em>) – Ruta a crear, debe ser absoluta</p></li>
+<li><p><strong>texto</strong> (<em>str</em>) – Los datos a agregar en el archivo de texto</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Ruta del archivo de texto y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[str, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-utils.general.carpeta">
+<span id="utils-general-carpeta-module"></span><h2>utils.general.carpeta module<a class="headerlink" href="#module-utils.general.carpeta" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="utils.general.carpeta.Carpeta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">utils.general.carpeta.</span></span><span class="sig-name descname"><span class="pre">Carpeta</span></span><a class="reference internal" href="_modules/utils/general/carpeta.html#Carpeta"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.carpeta.Carpeta" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Una clase que contiene métodos para crear y borrar carpetas indicando la ruta
+absoluta</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.carpeta.Carpeta.borrar_carpeta">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">borrar_carpeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ruta_carpeta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/carpeta.html#Carpeta.borrar_carpeta"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.carpeta.Carpeta.borrar_carpeta" title="Link to this definition"></a></dt>
+<dd><p>Elimina la carpeta</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ruta_carpeta</strong> (<em>str</em>) – Ruta a borrar, debe ser absoluta</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Ruta de la carpeta borrada y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[str, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.carpeta.Carpeta.crear_carpeta">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">crear_carpeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ruta_carpeta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/carpeta.html#Carpeta.crear_carpeta"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.carpeta.Carpeta.crear_carpeta" title="Link to this definition"></a></dt>
+<dd><p>Crea la carpeta</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ruta_carpeta</strong> (<em>str</em>) – Ruta a crear, debe ser absoluta</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Ruta de la carpeta creada y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[str, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-utils.general.constantes">
+<span id="utils-general-constantes-module"></span><h2>utils.general.constantes module<a class="headerlink" href="#module-utils.general.constantes" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="utils.general.constantes.Constantes">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">utils.general.constantes.</span></span><span class="sig-name descname"><span class="pre">Constantes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/utils/general/constantes.html#Constantes"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.constantes.Constantes" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Enum</span></code></p>
+<p>Una clase que contiene constantes base del sistema, así como la ruta principal y
+de los subdirectorios del proyecto para desarrollo y producción.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.general.constantes.Constantes.config">
+<span class="sig-name descname"><span class="pre">config</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;configparser.ConfigParser</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#utils.general.constantes.Constantes.config" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.general.constantes.Constantes.encoding">
+<span class="sig-name descname"><span class="pre">encoding</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'utf-8'</span></em><a class="headerlink" href="#utils.general.constantes.Constantes.encoding" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.general.constantes.Constantes.ruta_data">
+<span class="sig-name descname"><span class="pre">ruta_data</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'C:/4.</span> <span class="pre">Proyectos/Desarrollo</span> <span class="pre">de</span> <span class="pre">microservicios</span> <span class="pre">con</span> <span class="pre">IA/back_end_template/data'</span></em><a class="headerlink" href="#utils.general.constantes.Constantes.ruta_data" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.general.constantes.Constantes.ruta_log">
+<span class="sig-name descname"><span class="pre">ruta_log</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'C:/4.</span> <span class="pre">Proyectos/Desarrollo</span> <span class="pre">de</span> <span class="pre">microservicios</span> <span class="pre">con</span> <span class="pre">IA/back_end_template/log'</span></em><a class="headerlink" href="#utils.general.constantes.Constantes.ruta_log" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.general.constantes.Constantes.ruta_models">
+<span class="sig-name descname"><span class="pre">ruta_models</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'C:/4.</span> <span class="pre">Proyectos/Desarrollo</span> <span class="pre">de</span> <span class="pre">microservicios</span> <span class="pre">con</span> <span class="pre">IA/back_end_template/models'</span></em><a class="headerlink" href="#utils.general.constantes.Constantes.ruta_models" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.general.constantes.Constantes.ruta_principal">
+<span class="sig-name descname"><span class="pre">ruta_principal</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'C:/4.</span> <span class="pre">Proyectos/Desarrollo</span> <span class="pre">de</span> <span class="pre">microservicios</span> <span class="pre">con</span> <span class="pre">IA/back_end_template'</span></em><a class="headerlink" href="#utils.general.constantes.Constantes.ruta_principal" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.general.constantes.Constantes.ruta_reports">
+<span class="sig-name descname"><span class="pre">ruta_reports</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'C:/4.</span> <span class="pre">Proyectos/Desarrollo</span> <span class="pre">de</span> <span class="pre">microservicios</span> <span class="pre">con</span> <span class="pre">IA/back_end_template/reports'</span></em><a class="headerlink" href="#utils.general.constantes.Constantes.ruta_reports" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.general.constantes.Constantes.ruta_src">
+<span class="sig-name descname"><span class="pre">ruta_src</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'C:/4.</span> <span class="pre">Proyectos/Desarrollo</span> <span class="pre">de</span> <span class="pre">microservicios</span> <span class="pre">con</span> <span class="pre">IA/back_end_template/src'</span></em><a class="headerlink" href="#utils.general.constantes.Constantes.ruta_src" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.general.constantes.Constantes.ruta_tests">
+<span class="sig-name descname"><span class="pre">ruta_tests</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'C:/4.</span> <span class="pre">Proyectos/Desarrollo</span> <span class="pre">de</span> <span class="pre">microservicios</span> <span class="pre">con</span> <span class="pre">IA/back_end_template/tests'</span></em><a class="headerlink" href="#utils.general.constantes.Constantes.ruta_tests" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="utils.general.constantes.Constantes.ruta_tmp">
+<span class="sig-name descname"><span class="pre">ruta_tmp</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'C:/4.</span> <span class="pre">Proyectos/Desarrollo</span> <span class="pre">de</span> <span class="pre">microservicios</span> <span class="pre">con</span> <span class="pre">IA/back_end_template/tmp'</span></em><a class="headerlink" href="#utils.general.constantes.Constantes.ruta_tmp" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-utils.general.log">
+<span id="utils-general-log-module"></span><h2>utils.general.log module<a class="headerlink" href="#module-utils.general.log" title="Link to this heading"></a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="utils.general.log.setup_logging">
+<span class="sig-prename descclassname"><span class="pre">utils.general.log.</span></span><span class="sig-name descname"><span class="pre">setup_logging</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="reference internal" href="_modules/utils/general/log.html#setup_logging"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.log.setup_logging" title="Link to this definition"></a></dt>
+<dd><p>Setea el mensaje de logging para todos los scripts del utils y también del
+proyecto</p>
+</dd></dl>
+
+</section>
+<section id="module-utils.general.tiempo">
+<span id="utils-general-tiempo-module"></span><h2>utils.general.tiempo module<a class="headerlink" href="#module-utils.general.tiempo" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="utils.general.tiempo.Tiempo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">utils.general.tiempo.</span></span><span class="sig-name descname"><span class="pre">Tiempo</span></span><a class="reference internal" href="_modules/utils/general/tiempo.html#Tiempo"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.tiempo.Tiempo" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Una clase que contiene métodos para realizar operaciones con marcas de tiempo,
+entre otras</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.tiempo.Tiempo.calcular_intervalo">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">calcular_intervalo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inicio</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fin</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">frmt_tiempo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%H:%M:%S.%f'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/tiempo.html#Tiempo.calcular_intervalo"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.tiempo.Tiempo.calcular_intervalo" title="Link to this definition"></a></dt>
+<dd><p>Devuelve el intervalo de tiempo entre las dos marcas seleccionadas, las
+cuales previamente fueran convertidas a datetime en el formato indicado</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>inicio</strong> (<em>str</em>) – Una cadena de tiempo en formato hh:mm:ss.sss</p></li>
+<li><p><strong>fin</strong> (<em>str</em>) – Una cadena de tiempo en formato hh:mm:ss.sss</p></li>
+<li><p><strong>frmt_tiempo</strong> (<em>str</em>) – Formato de tiempo para inicio y fin</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Intervalo de tiempo en segundos y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[float, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.tiempo.Tiempo.marca_a_ms">
+<span class="sig-name descname"><span class="pre">marca_a_ms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/tiempo.html#Tiempo.marca_a_ms"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.tiempo.Tiempo.marca_a_ms" title="Link to this definition"></a></dt>
+<dd><p>Convierte una cadena de tiempo de formato hh:mm:ss.sss a milisegundos</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>marca_tiempo</strong> (<em>str</em>) – Una cadena de tiempo en formato hh:mm:ss.sss</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>El tiempo en milisegundos y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[int, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-utils.general.validaciones">
+<span id="utils-general-validaciones-module"></span><h2>utils.general.validaciones module<a class="headerlink" href="#module-utils.general.validaciones" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="utils.general.validaciones.Validaciones">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">utils.general.validaciones.</span></span><span class="sig-name descname"><span class="pre">Validaciones</span></span><a class="reference internal" href="_modules/utils/general/validaciones.html#Validaciones"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.validaciones.Validaciones" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Una clase que contiene métodos para validar tipos de variables, archivos,
+carpetas, etc</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.validaciones.Validaciones.es_formato_expediente">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">es_formato_expediente</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">num_expediente</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/validaciones.html#Validaciones.es_formato_expediente"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.validaciones.Validaciones.es_formato_expediente" title="Link to this definition"></a></dt>
+<dd><p>Valida si el número de expediente tiene el formato adecuado</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>num_expediente</strong> (<em>str</em>) – Variable a validar</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Tiene o no el formato del expediente y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.validaciones.Validaciones.es_len_correcto">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">es_len_correcto</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">len_esperado</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/validaciones.html#Validaciones.es_len_correcto"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.validaciones.Validaciones.es_len_correcto" title="Link to this definition"></a></dt>
+<dd><p>Valida si la longitud del iterable es la esperada</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>var</strong> (<em>Iterable</em><em>[</em><em>Any</em><em>]</em>) – Variable a validar</p></li>
+<li><p><strong>len_esperado</strong> (<em>int</em>) – Longitud esperada</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Tiene o no la longitud esperada y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.validaciones.Validaciones.es_ruta_absoluta">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">es_ruta_absoluta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ruta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/validaciones.html#Validaciones.es_ruta_absoluta"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.validaciones.Validaciones.es_ruta_absoluta" title="Link to this definition"></a></dt>
+<dd><p>Valida si la ruta es de tipo absoluta</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ruta</strong> (<em>str</em>) – Variable a validar</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Es o no una ruta absoluta y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.validaciones.Validaciones.es_tipo">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">es_tipo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tipo_esperado</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/validaciones.html#Validaciones.es_tipo"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.validaciones.Validaciones.es_tipo" title="Link to this definition"></a></dt>
+<dd><p>Valida si la variable es del tipo esperado</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>var</strong> (<em>Any</em>) – Variable a validar</p></li>
+<li><p><strong>tipo_esperado</strong> (<em>type</em>) – Tipo de dato que se espera</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Es o no el tipo de variable esperado y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.validaciones.Validaciones.es_tipo_archivo">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">es_tipo_archivo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ruta_archivo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tipo_esperado</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/validaciones.html#Validaciones.es_tipo_archivo"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.validaciones.Validaciones.es_tipo_archivo" title="Link to this definition"></a></dt>
+<dd><p>Valida si la ruta del archivo es del tipo esperado</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ruta_archivo</strong> (<em>str</em>) – Variable a validar</p></li>
+<li><p><strong>tipo_esperado</strong> (<em>str</em>) – Tipo de archivo que se espera</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Es o no el tipo de archivo esperado y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.validaciones.Validaciones.es_tipos">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">es_tipos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">var</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tipos_esperados</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">type</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/validaciones.html#Validaciones.es_tipos"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.validaciones.Validaciones.es_tipos" title="Link to this definition"></a></dt>
+<dd><p>Valida si la variable es de alguno de los tipos esperados</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>var</strong> (<em>Any</em>) – Variable a validar</p></li>
+<li><p><strong>tipos_esperados</strong> (<em>Iterable</em><em>[</em><em>type</em><em>]</em>) – Tipos de datos que se espera</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Es o no de alguno de los tipos de variables esperados y
+mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.validaciones.Validaciones.es_tipos_archivos">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">es_tipos_archivos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ruta_archivo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tipos_esperados</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/validaciones.html#Validaciones.es_tipos_archivos"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.validaciones.Validaciones.es_tipos_archivos" title="Link to this definition"></a></dt>
+<dd><p>Valida si la ruta del archivo es de alguno de los tipos esperados</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ruta_archivo</strong> (<em>str</em>) – Variable a validar</p></li>
+<li><p><strong>tipos_esperados</strong> (<em>Iterable</em><em>[</em><em>str</em><em>]</em>) – Tipos de archivos que se espera</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Es o no de alguno de los tipos de archivos esperados y
+mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.validaciones.Validaciones.existe_archivo">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">existe_archivo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ruta_archivo</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/validaciones.html#Validaciones.existe_archivo"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.validaciones.Validaciones.existe_archivo" title="Link to this definition"></a></dt>
+<dd><p>Valida si la ruta del archivo existe y es un archivo</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ruta_archivo</strong> (<em>str</em>) – Variable a validar</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Existe y es un archivo y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.validaciones.Validaciones.existe_carpeta">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">existe_carpeta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ruta_carpeta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/validaciones.html#Validaciones.existe_carpeta"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.validaciones.Validaciones.existe_carpeta" title="Link to this definition"></a></dt>
+<dd><p>Valida si la ruta de la carpeta existe y es una carpeta</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ruta_carpeta</strong> (<em>str</em>) – Variable a validar</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Existe y es una carpeta y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="utils.general.validaciones.Validaciones.existe_ruta">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">existe_ruta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ruta</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">credenciales</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/utils/general/validaciones.html#Validaciones.existe_ruta"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#utils.general.validaciones.Validaciones.existe_ruta" title="Link to this definition"></a></dt>
+<dd><p>Valida si la ruta existe</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parámetros<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ruta</strong> (<em>str</em>) – Variable a validar</p></li>
+<li><p><strong>credenciales</strong> (<em>dict</em>) – Datos a registrar en el log</p></li>
+</ul>
+</dd>
+<dt class="field-even">Devuelve<span class="colon">:</span></dt>
+<dd class="field-even"><p>Existe o no la ruta y mensaje de error</p>
+</dd>
+<dt class="field-odd">Tipo del valor devuelto<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple[bool, str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-utils.general">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-utils.general" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="utils.html" class="btn btn-neutral float-left" title="utils package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, Enzo Cisneros.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

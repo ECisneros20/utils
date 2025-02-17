@@ -1,5 +1,5 @@
-pj\_utils package
-=================
+utils package
+=============
 
 Subpackages
 -----------
@@ -7,12 +7,12 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   pj_utils.general
+   utils.general
 
 Module contents
 ---------------
 
-.. automodule:: pj_utils
+.. automodule:: utils
    :members:
    :undoc-members:
    :show-inheritance:

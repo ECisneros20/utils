@@ -1,6 +1,10 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Changelog para el codebase del proyecto
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1.0.1 (2025-02-17)
+------------------
+* Agregar documentación al paquete de utilidades.
+* Autor: Enzo Cisneros.
 1.0.0 (2025-02-17)
 ------------------
 * Cambios estructurales para codebase base y escalable.
