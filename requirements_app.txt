@@ -1,0 +1,5 @@
+# Back-end y microservicios
+fastapi==0.115.5
+gunicorn==23.0.0
+jwt==1.3.1
+uvicorn==0.32.1

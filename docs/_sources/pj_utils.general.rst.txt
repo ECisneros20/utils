@@ -1,0 +1,61 @@
+pj\_utils.general package
+=========================
+
+Submodules
+----------
+
+pj\_utils.general.archivo module
+--------------------------------
+
+.. automodule:: pj_utils.general.archivo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pj\_utils.general.carpeta module
+--------------------------------
+
+.. automodule:: pj_utils.general.carpeta
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pj\_utils.general.constantes module
+-----------------------------------
+
+.. automodule:: pj_utils.general.constantes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pj\_utils.general.log module
+----------------------------
+
+.. automodule:: pj_utils.general.log
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pj\_utils.general.tiempo module
+-------------------------------
+
+.. automodule:: pj_utils.general.tiempo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+pj\_utils.general.validaciones module
+-------------------------------------
+
+.. automodule:: pj_utils.general.validaciones
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: pj_utils.general
+   :members:
+   :undoc-members:
+   :show-inheritance:

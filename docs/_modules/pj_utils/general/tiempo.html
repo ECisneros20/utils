@@ -1,0 +1,217 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../../../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pj_utils.general.tiempo &mdash; documentación de Documentación de pj_utils - 0.0.1</title>
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=6fcc102b"></script>
+      <script src="../../../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../../../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../../../index.html" class="icon icon-home">
+            Documentación de pj_utils
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules.html">pj_utils</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">Documentación de pj_utils</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Código de módulo</a></li>
+      <li class="breadcrumb-item active">pj_utils.general.tiempo</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Código fuente para pj_utils.general.tiempo</h1><div class="highlight"><pre>
+<span></span><span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">traceback</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="kn">from</span> <span class="nn">.log</span> <span class="kn">import</span> <span class="n">agregar_log_bd</span><span class="p">,</span> <span class="n">setup_logging</span>
+<span class="kn">from</span> <span class="nn">.validaciones</span> <span class="kn">import</span> <span class="n">Validaciones</span>
+
+<span class="c1"># Configura el logging</span>
+<span class="n">setup_logging</span><span class="p">()</span>
+<span class="c1"># Obtiene un logger para este módulo</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">setLevel</span><span class="p">(</span><span class="s2">&quot;INFO&quot;</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="Tiempo">
+<a class="viewcode-back" href="../../../pj_utils.general.html#pj_utils.general.tiempo.Tiempo">[documentos]</a>
+<span class="k">class</span> <span class="nc">Tiempo</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Una clase que contiene métodos para realizar operaciones con marcas de tiempo,</span>
+<span class="sd">    entre otras</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="Tiempo.marca_a_ms">
+<a class="viewcode-back" href="../../../pj_utils.general.html#pj_utils.general.tiempo.Tiempo.marca_a_ms">[documentos]</a>
+    <span class="k">def</span> <span class="nf">marca_a_ms</span><span class="p">(</span><span class="n">marca_tiempo</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{})</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Convierte una cadena de tiempo de formato hh:mm:ss.sss a milisegundos</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            marca_tiempo (str): Una cadena de tiempo en formato hh:mm:ss.sss</span>
+<span class="sd">            credenciales (dict): Datos a registrar en el log</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            tuple[int, str]: El tiempo en milisegundos y mensaje de error</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Validar que &#39;marca_tiempo&#39; sea del tipo str</span>
+        <span class="n">res</span><span class="p">,</span> <span class="n">msj</span> <span class="o">=</span> <span class="n">Validaciones</span><span class="o">.</span><span class="n">es_tipo</span><span class="p">(</span><span class="n">marca_tiempo</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">res</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="n">msj</span>
+        <span class="c1"># Validar que &#39;marca_tiempo&#39; esté compuesto de 3 elementos al hacer split</span>
+        <span class="n">res</span><span class="p">,</span> <span class="n">msj</span> <span class="o">=</span> <span class="n">Validaciones</span><span class="o">.</span><span class="n">es_len_correcto</span><span class="p">(</span>
+            <span class="n">marca_tiempo</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">),</span> <span class="mi">3</span><span class="p">,</span> <span class="n">credenciales</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">res</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="n">msj</span>
+        <span class="c1"># Intenta calcular los milisegundos</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">horas</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">marca_tiempo</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="n">minutos</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">marca_tiempo</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)[</span><span class="mi">1</span><span class="p">])</span>
+            <span class="n">segundos</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">marca_tiempo</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">)[</span><span class="mi">2</span><span class="p">])</span>
+            <span class="k">return</span> <span class="p">(</span><span class="nb">int</span><span class="p">)((</span><span class="n">horas</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">+</span> <span class="n">minutos</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">+</span> <span class="n">segundos</span><span class="p">)</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">),</span> <span class="kc">None</span>
+        <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;La marca_tiempo debe contener números válidos: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
+            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mensaje</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Error tiempo&quot;</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;No se convirtió a milisegundos, problema imprevisto: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
+            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mensaje</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Error tiempo&quot;</span></div>
+
+
+<div class="viewcode-block" id="Tiempo.calcular_intervalo">
+<a class="viewcode-back" href="../../../pj_utils.general.html#pj_utils.general.tiempo.Tiempo.calcular_intervalo">[documentos]</a>
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">calcular_intervalo</span><span class="p">(</span>
+        <span class="n">inicio</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">fin</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">frmt_tiempo</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;%H:%M:%S.</span><span class="si">%f</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Devuelve el intervalo de tiempo entre las dos marcas seleccionadas, las</span>
+<span class="sd">        cuales previamente fueran convertidas a datetime en el formato indicado</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            inicio (str): Una cadena de tiempo en formato hh:mm:ss.sss</span>
+<span class="sd">            fin (str): Una cadena de tiempo en formato hh:mm:ss.sss</span>
+<span class="sd">            frmt_tiempo (str): Formato de tiempo para inicio y fin</span>
+<span class="sd">            credenciales (dict): Datos a registrar en el log</span>
+
+<span class="sd">        Returns:</span>
+<span class="sd">            tuple[float, str]: Intervalo de tiempo en segundos y mensaje de error</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="c1"># Validar que &#39;inicio&#39; sea del tipo str</span>
+        <span class="n">res</span><span class="p">,</span> <span class="n">msj</span> <span class="o">=</span> <span class="n">Validaciones</span><span class="o">.</span><span class="n">es_tipo</span><span class="p">(</span><span class="n">inicio</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">res</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="n">msj</span>
+        <span class="c1"># Validar que &#39;inicio&#39; esté compuesto de 3 elementos al hacer split</span>
+        <span class="n">res</span><span class="p">,</span> <span class="n">msj</span> <span class="o">=</span> <span class="n">Validaciones</span><span class="o">.</span><span class="n">es_len_correcto</span><span class="p">(</span><span class="n">inicio</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">),</span> <span class="mi">3</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">res</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="n">msj</span>
+        <span class="c1"># Validar que &#39;fin&#39; sea del tipo str</span>
+        <span class="n">res</span><span class="p">,</span> <span class="n">msj</span> <span class="o">=</span> <span class="n">Validaciones</span><span class="o">.</span><span class="n">es_tipo</span><span class="p">(</span><span class="n">fin</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">res</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="n">msj</span>
+        <span class="c1"># Validar que &#39;fin&#39; esté compuesto de 3 elementos al hacer split</span>
+        <span class="n">res</span><span class="p">,</span> <span class="n">msj</span> <span class="o">=</span> <span class="n">Validaciones</span><span class="o">.</span><span class="n">es_len_correcto</span><span class="p">(</span><span class="n">fin</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">),</span> <span class="mi">3</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">res</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="n">msj</span>
+        <span class="c1"># Validar que &#39;frmt_tiempo&#39; sea del tipo str</span>
+        <span class="n">res</span><span class="p">,</span> <span class="n">msj</span> <span class="o">=</span> <span class="n">Validaciones</span><span class="o">.</span><span class="n">es_tipo</span><span class="p">(</span><span class="n">frmt_tiempo</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">res</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="n">msj</span>
+        <span class="c1"># Validar que &#39;frmt_tiempo&#39; esté compuesto de 3 elementos al hacer split</span>
+        <span class="n">res</span><span class="p">,</span> <span class="n">msj</span> <span class="o">=</span> <span class="n">Validaciones</span><span class="o">.</span><span class="n">es_len_correcto</span><span class="p">(</span><span class="n">frmt_tiempo</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;:&quot;</span><span class="p">),</span> <span class="mi">3</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">res</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="n">msj</span>
+        <span class="c1"># Intenta calcular los milisegundos</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">inicio</span><span class="p">:</span> <span class="n">datetime</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">inicio</span><span class="p">,</span> <span class="n">frmt_tiempo</span><span class="p">)</span>
+            <span class="n">fin</span><span class="p">:</span> <span class="n">datetime</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="n">fin</span><span class="p">,</span> <span class="n">frmt_tiempo</span><span class="p">)</span>
+            <span class="k">return</span> <span class="p">(</span><span class="n">fin</span> <span class="o">-</span> <span class="n">inicio</span><span class="p">)</span><span class="o">.</span><span class="n">total_seconds</span><span class="p">(),</span> <span class="kc">None</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;No se calculó el intervalo, problema imprevisto: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
+            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mensaje</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
+            <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Error tiempo&quot;</span></div>
+</div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2024, Enzo Cisneros.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
