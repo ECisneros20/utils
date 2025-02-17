@@ -1,0 +1,18 @@
+pj\_utils package
+=================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pj_utils.general
+
+Module contents
+---------------
+
+.. automodule:: pj_utils
+   :members:
+   :undoc-members:
+   :show-inheritance:
