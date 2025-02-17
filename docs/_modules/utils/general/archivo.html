@@ -5,14 +5,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>pj_utils.general.archivo &mdash; documentación de Documentación de pj_utils - 0.0.1</title>
+  <title>utils.general.archivo &mdash; documentación de Documentación de utils - 0.1.0</title>
       <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=e59714d7" />
 
   
       <script src="../../../_static/jquery.js?v=5d32c60e"></script>
       <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="../../../_static/documentation_options.js?v=6fcc102b"></script>
+      <script src="../../../_static/documentation_options.js?v=ba61de6b"></script>
       <script src="../../../_static/doctools.js?v=9bcbadda"></script>
       <script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script>
       <script src="../../../_static/translations.js?v=f85f4cfb"></script>
@@ -30,7 +30,7 @@
           
           
           <a href="../../../index.html" class="icon icon-home">
-            Documentación de pj_utils
+            Documentación de utils
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
@@ -42,7 +42,7 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../../../modules.html">pj_utils</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../modules.html">utils</a></li>
 </ul>
 
         </div>
@@ -51,7 +51,7 @@
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../../../index.html">Documentación de pj_utils</a>
+          <a href="../../../index.html">Documentación de utils</a>
       </nav>
 
       <div class="wy-nav-content">
@@ -60,7 +60,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../index.html">Código de módulo</a></li>
-      <li class="breadcrumb-item active">pj_utils.general.archivo</li>
+      <li class="breadcrumb-item active">utils.general.archivo</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -69,17 +69,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>Código fuente para pj_utils.general.archivo</h1><div class="highlight"><pre>
+  <h1>Código fuente para utils.general.archivo</h1><div class="highlight"><pre>
 <span></span><span class="kn">import</span> <span class="nn">logging</span>
 <span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">traceback</span>
 <span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Any</span>
 
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">docxtpl</span> <span class="kn">import</span> <span class="n">DocxTemplate</span>
 
 <span class="kn">from</span> <span class="nn">.constantes</span> <span class="kn">import</span> <span class="n">Constantes</span>
-<span class="kn">from</span> <span class="nn">.log</span> <span class="kn">import</span> <span class="n">agregar_log_bd</span><span class="p">,</span> <span class="n">setup_logging</span>
+<span class="kn">from</span> <span class="nn">.log</span> <span class="kn">import</span> <span class="n">setup_logging</span>
 <span class="kn">from</span> <span class="nn">.validaciones</span> <span class="kn">import</span> <span class="n">Validaciones</span>
 
 <span class="c1"># Configura el logging</span>
@@ -90,14 +89,14 @@
 
 
 <div class="viewcode-block" id="Archivo">
-<a class="viewcode-back" href="../../../pj_utils.general.html#pj_utils.general.archivo.Archivo">[documentos]</a>
+<a class="viewcode-back" href="../../../utils.general.html#utils.general.archivo.Archivo">[documentos]</a>
 <span class="k">class</span> <span class="nc">Archivo</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;Una clase que contiene métodos para crear y actualizar archivo csv y txt, crear</span>
 <span class="sd">    archivos docx, y borrar archivos en general</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
 <div class="viewcode-block" id="Archivo.borrar_archivo">
-<a class="viewcode-back" href="../../../pj_utils.general.html#pj_utils.general.archivo.Archivo.borrar_archivo">[documentos]</a>
+<a class="viewcode-back" href="../../../utils.general.html#utils.general.archivo.Archivo.borrar_archivo">[documentos]</a>
     <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">borrar_archivo</span><span class="p">(</span><span class="n">ruta_archivo</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{})</span> <span class="o">-&gt;</span> <span class="nb">tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;Elimina el archivo</span>
@@ -122,22 +121,19 @@
             <span class="n">os</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">ruta_archivo</span><span class="p">)</span>
             <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Archivo eliminado: </span><span class="si">{</span><span class="n">ruta_archivo</span><span class="si">}</span><span class="s2">&quot;</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
-            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="n">mensaje</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
             <span class="k">return</span> <span class="n">ruta_archivo</span><span class="p">,</span> <span class="kc">None</span>
         <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;El archivo está abierto: </span><span class="si">{</span><span class="n">ruta_archivo</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
-            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mensaje</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
             <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Error archivo&quot;</span>
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;No se borró el archivo </span><span class="si">{</span><span class="n">ruta_archivo</span><span class="si">}</span><span class="s2">, problema imprevisto: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
-            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mensaje</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
             <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Error archivo&quot;</span></div>
 
 
 <div class="viewcode-block" id="Archivo.crear_csv">
-<a class="viewcode-back" href="../../../pj_utils.general.html#pj_utils.general.archivo.Archivo.crear_csv">[documentos]</a>
+<a class="viewcode-back" href="../../../utils.general.html#utils.general.archivo.Archivo.crear_csv">[documentos]</a>
     <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">crear_csv</span><span class="p">(</span>
         <span class="n">ruta_csv</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -203,12 +199,11 @@
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Error al operar con el df, problema imprevisto: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
-            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mensaje</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
             <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Error archivo&quot;</span></div>
 
 
 <div class="viewcode-block" id="Archivo.actualizar_csv">
-<a class="viewcode-back" href="../../../pj_utils.general.html#pj_utils.general.archivo.Archivo.actualizar_csv">[documentos]</a>
+<a class="viewcode-back" href="../../../utils.general.html#utils.general.archivo.Archivo.actualizar_csv">[documentos]</a>
     <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">actualizar_csv</span><span class="p">(</span>
         <span class="n">ruta_csv</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -247,7 +242,6 @@
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;No se cargó el csv como df, problema imprevisto: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
-            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mensaje</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
             <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Error archivo&quot;</span>
         <span class="c1"># Validar que &#39;filas&#39; sea del tipo list</span>
         <span class="n">res</span><span class="p">,</span> <span class="n">msj</span> <span class="o">=</span> <span class="n">Validaciones</span><span class="o">.</span><span class="n">es_tipo</span><span class="p">(</span><span class="n">filas</span><span class="p">,</span> <span class="nb">list</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
@@ -278,11 +272,9 @@
         <span class="k">if</span> <span class="nb">set</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span><span class="o">.</span><span class="n">issubset</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">columnas</span><span class="p">)):</span>
             <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Las columnas del csv se incluyen en: </span><span class="si">{</span><span class="n">columnas</span><span class="si">}</span><span class="s2">&quot;</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
-            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="n">mensaje</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
         <span class="k">else</span><span class="p">:</span>
             <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Las columnas del csv no se incluyen en: </span><span class="si">{</span><span class="n">columnas</span><span class="si">}</span><span class="s2">&quot;</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
-            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="n">mensaje</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
             <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Error archivo&quot;</span>
         <span class="c1"># Intenta actulizar el csv</span>
         <span class="k">try</span><span class="p">:</span>
@@ -296,12 +288,11 @@
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Error al operar con los df, problema imprevisto: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
-            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mensaje</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
             <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Error archivo&quot;</span></div>
 
 
 <div class="viewcode-block" id="Archivo.crear_txt">
-<a class="viewcode-back" href="../../../pj_utils.general.html#pj_utils.general.archivo.Archivo.crear_txt">[documentos]</a>
+<a class="viewcode-back" href="../../../utils.general.html#utils.general.archivo.Archivo.crear_txt">[documentos]</a>
     <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">crear_txt</span><span class="p">(</span>
         <span class="n">ruta_txt</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">texto</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{}</span>
@@ -342,12 +333,11 @@
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Error al escribir en </span><span class="si">{</span><span class="n">ruta_txt</span><span class="si">}</span><span class="s2">, problema imprevisto: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
-            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mensaje</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
             <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Error archivo&quot;</span></div>
 
 
 <div class="viewcode-block" id="Archivo.actualizar_txt">
-<a class="viewcode-back" href="../../../pj_utils.general.html#pj_utils.general.archivo.Archivo.actualizar_txt">[documentos]</a>
+<a class="viewcode-back" href="../../../utils.general.html#utils.general.archivo.Archivo.actualizar_txt">[documentos]</a>
     <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">actualizar_txt</span><span class="p">(</span>
         <span class="n">ruta_txt</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">texto</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">:</span> <span class="nb">dict</span> <span class="o">=</span> <span class="p">{}</span>
@@ -388,12 +378,11 @@
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;Error al escribir en </span><span class="si">{</span><span class="n">ruta_txt</span><span class="si">}</span><span class="s2">, problema imprevisto: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
-            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mensaje</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
             <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Error archivo&quot;</span></div>
 
 
 <div class="viewcode-block" id="Archivo.crear_docx">
-<a class="viewcode-back" href="../../../pj_utils.general.html#pj_utils.general.archivo.Archivo.crear_docx">[documentos]</a>
+<a class="viewcode-back" href="../../../utils.general.html#utils.general.archivo.Archivo.crear_docx">[documentos]</a>
     <span class="nd">@staticmethod</span>
     <span class="k">def</span> <span class="nf">crear_docx</span><span class="p">(</span>
         <span class="n">ruta_docx</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
@@ -460,12 +449,10 @@
         <span class="k">except</span> <span class="ne">PermissionError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;El archivo docx o la plantilla están abiertos: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
-            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mensaje</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
             <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Error archivo&quot;</span>
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
             <span class="n">mensaje</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;No se generó el archivo docx, problema imprevisto: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
             <span class="n">logger</span><span class="o">.</span><span class="n">exception</span><span class="p">(</span><span class="n">mensaje</span><span class="p">)</span>
-            <span class="n">agregar_log_bd</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">mensaje</span><span class="si">}</span><span class="se">\n</span><span class="si">{</span><span class="n">traceback</span><span class="o">.</span><span class="n">format_exc</span><span class="p">()</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">credenciales</span><span class="p">)</span>
             <span class="k">return</span> <span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Error archivo&quot;</span></div>
 </div>
 
@@ -478,7 +465,7 @@
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Derechos de autor 2024, Enzo Cisneros.</p>
+    <p>&#169; Derechos de autor 2025, Enzo Cisneros.</p>
   </div>
 
   Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un

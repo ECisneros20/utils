@@ -1,0 +1,61 @@
+utils.general package
+=====================
+
+Submodules
+----------
+
+utils.general.archivo module
+----------------------------
+
+.. automodule:: utils.general.archivo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+utils.general.carpeta module
+----------------------------
+
+.. automodule:: utils.general.carpeta
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+utils.general.constantes module
+-------------------------------
+
+.. automodule:: utils.general.constantes
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+utils.general.log module
+------------------------
+
+.. automodule:: utils.general.log
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+utils.general.tiempo module
+---------------------------
+
+.. automodule:: utils.general.tiempo
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+utils.general.validaciones module
+---------------------------------
+
+.. automodule:: utils.general.validaciones
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: utils.general
+   :members:
+   :undoc-members:
+   :show-inheritance:
